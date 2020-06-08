@@ -8,18 +8,18 @@
 <body>
     <?php
     function infoNumber($number1, $number2) {
-        // verifie que les paramétres ne sont pas des chaines de carractéres
+            // verifie que les paramétres ne sont pas des chaines de carractéres
         if ((is_string($number1) == true) || (is_string($number2) == true)) {
             return 'ERREUR, veuillez rentrer des nombres';
         }else {
         //sinon, verifie qui est le plus grand
             if ($number1 > $number2) {
-            return 'Le premier nombre est le plus grand.';
-        }else if ($number1 < $number2) {
-            return 'le premier nombre est plus petit.';
-        }else {
-            return 'Les deux nombres sont identiques';
-        }
+                return 'Le premier nombre est le plus grand.';
+            }else if ($number1 < $number2) {
+                return 'le premier nombre est plus petit.';
+            }else {
+                return 'Les deux nombres sont identiques';
+            }
         }
     }
     ?>
